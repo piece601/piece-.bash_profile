@@ -56,4 +56,5 @@ alias ciuser_guide="_(){
 											fi
 										}; _;" # Codeigniter 使用手冊
 
+alias pitisan="php index.php pitisan"
 
