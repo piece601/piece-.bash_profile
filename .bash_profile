@@ -33,7 +33,7 @@ alias cdump='composer dump-autoload' # alias composer dumpautoload
 
 alias laracreate='_(){ laravel new $1; cd $1; chmod -R 777 storage/; cp .env.example .env;php artisan key:generate;}; _' # 快速新增 laravel Project
 
-alias cicreate="_(){	git clone https://github.com/piece601/Codeigniter-2-for-piece.git \$1;
+alias ci2create="_(){	git clone https://github.com/piece601/Codeigniter-2-for-piece.git \$1;
 											cd \$1; echo 'RewriteBase /'\$1 >> .htaccess;
 											mkdir uploads; mkdir captcha;
 											chmod -R 755 assets; chmod -R 777 uploads;
@@ -58,3 +58,7 @@ alias ciuser_guide="_(){
 
 alias pitisan="php index.php pitisan"
 
+alias cicreate="_(){	git clone https://github.com/piece601/Codeigniter-3-For-Piece.git \$1;
+											cd \$1; echo 'RewriteBase /'\$1 >> .htaccess;
+											chmod -R 755 assets; chmod -R 777 uploads;
+											chmod -R 777 captcha; }; _" # 新建一個 Codeigniter 3 for Piece 的 Project
